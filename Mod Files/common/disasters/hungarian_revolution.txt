@@ -1,0 +1,73 @@
+hungarian_revolution = {
+	potential = {
+		NOT = { has_country_flag = had_revolution }
+		tag = HEM
+		is_free_or_tributary_trigger = yes
+		government = monarchy
+		owns_core_province = 153 #Pest
+	}
+	
+	can_start = {
+		current_age = age_of_revolutions
+		num_of_cities = 20
+		has_any_disaster = no
+		OR = {
+			NOT = { stability = 0 }
+			num_of_loans = 30
+			inflation = 10
+			war_exhaustion = 10
+			NOT = { prestige = 0 }
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			AND = { 
+				stability = 3
+				prestige = 50
+				}
+			}
+		}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 2
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 0.5
+			num_of_loans = 10
+			NOT = { num_of_loans = 20 }
+		}
+		modifier = {
+			factor = 1
+			num_of_loans = 25
+		}
+		modifier = {
+			factor = 5
+			is_bankrupt = yes
+		}
+	}
+	
+	can_end = {
+			AND = {
+				stability = 3
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+			}
+		}
+	
+	modifier = {
+		global_unrest = 10
+		stability_cost_modifier = 0.1
+	}
+	
+	on_start = hungarian_revolution.1
+	
+	
+				
+			
