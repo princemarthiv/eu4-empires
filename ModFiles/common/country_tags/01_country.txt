@@ -1,0 +1,3 @@
+AHE = "countries/Austria-Hungary.txt"
+HEM = "countries/HabsburgEmpire.txt"
+NGF = "countries/NorthGermanConfederation.txt"

@@ -1,0 +1,58 @@
+country_decisions = {
+
+	northgerman_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_northgerman_flag }
+			NOT = { exists = GER }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = HEM }
+			adm_tech = 15
+			num_of_cities = 15
+			OR = {
+				primary_culture = hannoverian #Westphalian
+				primary_culture = pommeranian
+				primary_culture = saxon
+				primary_culture = prussian
+				primary_culture = hessian	#Rhenish
+			}
+		}
+		allow = {
+			calc_true_if = {
+						all_core_province = {
+								region = north_german_region
+									}
+								amount = 30
+								}
+			adm_tech = 18
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 50 # Berlin
+		}
+		effect = {
+			change_tag = NGF
+			set_country_flag = formed_northgerman_flag
+			set_government_rank = 2
+			north_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NGF
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			every_country = {
+				capital_scope = {
+					region = north_german_region
+				}
+				country_event = { id = german_unification.1 }
+			}
+		}
+	}
+}

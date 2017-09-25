@@ -1,0 +1,53 @@
+namespace = german_unification
+
+# The Confederation of North German States
+country_event = {
+	id = german_unification.1
+	title = "german_unification.EVTNAME1"
+	desc = "german_unification.EVTDESC1"
+	picture = Conquest_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "german_unifcation.EVT1OPTA"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				army_size = NGF
+			}
+		}
+			tag = NGF {				# Needs editing
+			country_event = { id = german_unification.2 }
+		}
+		}
+	}
+	
+	option = {
+		name = "german_unifcation.EVT1OPTB"
+		ai_chance = {
+			factor = 10
+		}
+		add_prestige = 10
+	}
+}
+
+# German states join the confederation
+country_event = {
+	id = german_unification.2
+	title = "german_unification.EVTNAME2"
+	desc = "german_unifcation.EVTDESC2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "german_unification.EVT2OPTA"
+		integrate = ROOT				#Needs fixing
+	}
+}
+
+	
+			
+	
