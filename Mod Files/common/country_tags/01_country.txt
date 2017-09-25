@@ -1,2 +1,0 @@
-AHE = "countries/Austria-Hungary.txt"
-HEM = "countries/HabsburgEmpire.txt"
