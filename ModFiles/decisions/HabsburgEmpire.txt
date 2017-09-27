@@ -54,7 +54,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HEM
 			}
-			alföld_area = {
+			alfold_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

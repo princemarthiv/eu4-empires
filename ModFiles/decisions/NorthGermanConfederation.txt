@@ -35,7 +35,12 @@ country_decisions = {
 		effect = {
 			change_tag = NGF
 			set_country_flag = formed_northgerman_flag
-			set_government_rank = 2
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+					set_government_rank = 2
+				}
+			}
 			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -48,11 +53,14 @@ country_decisions = {
 			}
 			add_prestige = 25
 			every_country = {
-				capital_scope = {
-					region = north_german_region
+				limit = {
+					capital_scope = {region = north_german_region}
+					is_part_of_hre = yes
+					NOT = {tag = NGF}
+					NOT = {tag = BOH}
 				}
 				country_event = { id = german_unification.1 }
 			}
+			
 		}
 	}
-}

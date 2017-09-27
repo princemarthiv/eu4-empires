@@ -11,26 +11,23 @@ country_event = {
 	major = yes
 	
 	option = {
-		name = "german_unifcation.EVT1OPTA"
+		name = "german_unification.EVT1OPTA"
 		ai_chance = {
 			factor = 1
-			modifier = {
-				factor = 0
-				army_size = NGF
-			}
 		}
-			tag = NGF {				# Needs editing
+		NGF = {
 			country_event = { id = german_unification.2 }
 		}
-		}
 	}
-	
 	option = {
-		name = "german_unifcation.EVT1OPTB"
-		ai_chance = {
-			factor = 10
+		name = "german_unification.EVT1OPTB"
+		ai_chance = { 
+			factor = 0
+			modifier = {
+				factor = 2
+				if = {army_size = NGF}
+			}
 		}
-		add_prestige = 10
 	}
 }
 
@@ -39,12 +36,12 @@ country_event = {
 	id = german_unification.2
 	title = "german_unification.EVTNAME2"
 	desc = "german_unifcation.EVTDESC2"
-	
+	picture = Court_eventPicture
 	is_triggered_only = yes
 	
 	option = {
 		name = "german_unification.EVT2OPTA"
-		integrate = ROOT				#Needs fixing
+		inherit = FROM
 	}
 }
 
