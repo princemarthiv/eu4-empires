@@ -5,7 +5,7 @@ country_event = {
 	id = german_unification.1
 	title = "german_unification.EVTNAME1"
 	desc = "german_unification.EVTDESC1"
-	picture = Conquest_eventPicture
+	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes
 	major = yes
@@ -21,11 +21,11 @@ country_event = {
 	}
 	option = {
 		name = "german_unification.EVT1OPTB"
-		ai_chance = { 
+		ai_chance = {
 			factor = 0
 			modifier = {
-				factor = 2
-				if = {army_size = NGF}
+				army_size = NGF
+				factor = 4
 			}
 		}
 	}
@@ -36,7 +36,7 @@ country_event = {
 	id = german_unification.2
 	title = "german_unification.EVTNAME2"
 	desc = "german_unification.EVTDESC2"
-	picture = Court_eventPicture
+	picture = COURT_eventPicture
 	is_triggered_only = yes
 	
 	option = {
@@ -57,7 +57,7 @@ country_event = {
 				tag = AHE
 			}
 		}
-		"german_unification.EVTDESC3.a"
+		desc = "german_unification.EVTDESC3.a"
 	}
 	desc = {
 		trigger = {
@@ -67,9 +67,9 @@ country_event = {
 				tag = AHE
 			}
 		}
-		"german_unification.EVTDESC3.b
+		desc = "german_unification.EVTDESC3.b"
 	}	
-	picture = Conquest_eventPicture
+	picture = CONQUEST_eventPicture
 	fire_only_once = yes
 	major = yes
 	trigger = {
@@ -83,115 +83,115 @@ country_event = {
 			tag = HAB
 			tag = HEM
 			tag = AHE
-			army_strength = {
-				who = {
-					every_country = {
-						limit = {
-							capital_scope = { region = south_german_region }
-						}
-					}
+			any_country = {
+				capital_scope = {
+					region = south_german_region 
 				}
-				value = 1.25
-			}			
+				num_of_owned_provinces_with = {
+					region = south_german_region
+					value = 20
+				}
+			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 1
 	}
 		
 	option = {
-		name = {
-			if = {
+		name = "german_unification.EVT3OPTA"
+		if = {
+			limit = {
 				OR = {
 					tag = HAB
 					tag = HEM
 					tag = AHE
 				}
-				"german_unification.EVT3OPTA.1"
 			}
-			if = {
+			hidden_effect = {
+				country_event = { 
+					id = german_unification.5 
+					days = 30
+				}
+			}
+		}
+		if = {
+			limit = {
 				NOT = {
 					tag = HAB
 					tag = HEM
 					tag = AHE
 				}
-				"german_unification.EVT3OPTA.2
-			}
-		}
-		if = {
-			OR = {
-				tag = HAB
-				tag = HEM
-				tag = AHE
-			}
-			hidden_effect = {
-				country_event = { id = german_unification.5 }
-				days = 30
-			}
-		}
-		if = {
-			NOT = {
-				tag = HAB
-				tag = HEM
-				tag = AHE
 			}
 			change_tag = SGF
 		}
 		every_country = {
 			limit = {
 				capital_scope = { region = south_german_region }
+				NOT = {
+					tag = HAB
+					tag = AHE
+					tag = HEM
+				}
 			}
 			country_event = { id = german_unification.4 }
 		}
-		ai_chance = 1
+		ai_chance = {factor = 1}
 	}
 	
 	option = {
 		name = german_unification.EVT3OPTB
 		add_prestige = -10
-		ai_chance = 0
+		ai_chance = {factor = 0}
 	}
 }
 
 # The South German Confederation
 country_event = {
 	id = german_unification.4
-	name = german_unification.EVTNAME4
+	title = german_unification.EVTNAME4
 	desc = german_unification.EVTDESC4
-	picture = Court_eventPicture
+	picture = COURT_eventPicture
 	is_triggered_only = yes
 	
 	option = {
 		name = german_unification.EVT4OPTA
+		ai_chance = {factor = 1}
 		SGF = {
-			integrate = ROOT 
-		ai_chance = 1
+			inherit = ROOT 
 		}
 	}
 	
 	option = {
 		name = german_unification.EVT4OPTB
 		add_prestige = 10
-		if = {
-			army_strength = {
-				who = ROOT
-				value = 1 
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				NOT = {
+					army_strength = {
+						who = FROM
+						value = 1
+					}
+				}	
 			}
-			ai_chance = 2
 		}
 	}
+}
 
 # Vassalizing South German Confederation
 country_event = {
 	id = german_unification.5
-	name = german_unification.EVTNAME5
+	title = german_unification.EVTNAME5
 	desc = german_unification.EVTDESC5
-	picture = Court_eventPicture
+	picture = COURT_eventPicture
 	is_triggered_only = yes
 	
 	option = {
 		name = german_unification.EVT5OPTA
-		create_vassal = SGF
+		vassalize = SGF
 	}
 }
 		

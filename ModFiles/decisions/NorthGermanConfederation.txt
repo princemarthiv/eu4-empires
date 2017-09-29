@@ -1,5 +1,4 @@
 country_decisions = {
-
 	northgerman_nation = {
 		major = yes
 		potential = {
@@ -64,3 +63,4 @@ country_decisions = {
 			
 		}
 	}
+}

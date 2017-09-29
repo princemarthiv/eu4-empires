@@ -7,10 +7,9 @@
  german_unification.EVTDESC2: "[From.Monarch.GetName] from [From.GetName] has accepted our offer for membership within the new confederation of north German states!"
  german_unification.EVT2OPTA: "Welcome brothers, to the new Reich!"
  german_unification.EVTNAME3: "A new threat"
- german_unification.EVTDESC3.a: "The rogue Germans of the north have managed to unite themselves into a centralized state, with the goal of creating a centralized Germany, by force. Perhaps we should limit their options to expand whilst also claiming land for ourselves? The south Germans surely would make a valuable vassal for the Habsburg realm, no?
- german_unification.EVTDESC3.b: "The amibtious Germans in the north have managed to consolidate themselves into a confederation, with the goals of a unified Germany. Because of our strength among the south German states, it is up to us to organize a response to this new threat to us. Shall we lead the south German states against this menace?
- german_unification.EVT3OPTA.1: "We shall bend the south Germans knee to [Root.GetAdjective] ambitions.
- german_unification.EVT3OPTA.2: "We shall lead the south against these pretenders, we are the true rulers of Germany!"
+ german_unification.EVTDESC3.a: "The rogue Germans of the north have managed to unite themselves into a centralized state, with the goal of creating a centralized Germany, by force. Perhaps we should limit their options to expand whilst also claiming land for ourselves? The south Germans surely would make a valuable vassal for the Habsburg realm, no?"
+ german_unification.EVTDESC3.b: "The amibtious Germans in the north have managed to consolidate themselves into a confederation, with the goals of a unified Germany. Because of our strength among the south German states, it is up to us to organize a response to this new threat to us. Shall we lead the south German states against this menace?"
+ german_unification.EVT3OPTA: "We shall lead the south against these pretenders, we are the true rulers of Germany!"
  german_unification.EVT3OPTB: "We needen't worry about their petty confederacy."
  german_unification.EVTNAME4: "The South German Confederation"
  german_unification.EVTDESC4: "Diplomats from [From.GetName] have arrived today, requesting that in order to combat the new threat in the north, we are to join our own confederation of south German states. This would give us a far better chance at defending ourselves against the agressive ambitions of the north."
