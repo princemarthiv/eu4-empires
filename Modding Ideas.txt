@@ -1,0 +1,64 @@
+Mod ideas
+	Christians
+		New localisations on titles, (Kaiser,Emperor of the french,}
+		french revolution will fire if ai and no other revolutions
+			trigger railroading for napoleonic wars across europe, 
+				trigger railroading for pan-nationalism (if not already fired for german, slav, italian,)
+			offer challenge to large european empires with punishing but beatable france,
+				possible railroading with coallitions 
+		restore archduchy unique government, possibly prussian monarchy for diplomacy, giving bonus imperial growth at high values,
+		flavour events for german unification states and german empire
+		rework sejm, make unique government type, proper elections and fighting with nobles, proper influence from foreign countries (explore ideas of transferred PU),	
+		cossack hosts (explore new subject types with this, possible integration with decision, possible interactions with estates), PLR Commmonwealth, 
+		time of troubles rework, make Russia have some risk mid-game, influence from plc, swed, otto, hordes, etc. capable of ramping up to full power if they overcome it
+		unified iberia, explore possible disasters for iberian region
+		explore disasters and flavour for scandinavia
+		explore disasters and flavour for britain
+		rework papal mechanics, make the pope actually interesting to play (possibly becoming active crusader, establish crusader states as marches, reform into jerusalem?)
+		add heresies as actual religions, with specific mechanics and events
+		
+		
+	Muslims	~look more indepth after Persia patch
+	`	Caliphate
+			Rival Caliphs, Competing religious sects
+			Claims on the Muslim world
+			settle religious conflicts, call jihads, 
+		Hordes
+			Rare events for great conquerors (timur, seljuk, genghis)
+		Persia
+			Railroading
+			modify events to offer a challenge to the Ottomans
+			after 1.23 look into zorastrian unified persia and events that would accompany it 
+		Moghuls
+			Railroading
+			Flavor regarding Sikh rebels and religious instability.
+		North Indian Sultans
+			Disasters reflecting their incompetence
+		West Africa
+			explore flavour regarding clashes between islam and tribalism
+			explore flavour for mali, songhai, timbuktu, 
+		East Africa	
+			explore flavour regarding clashes between islam and copts
+			explore flavour for mozambique, zimbabwe, and others in horn of africa region, 
+			look into madegascar flavour, (if any exists)
+		North Africa	
+			reforming Al-Andulas restores the Umayyads
+			flavor between berber tribes, iberians, and italians
+			Explore options regarding egypt, returning to polytheism, reinstating the pharoah
+		Expansion
+			possible coallitions if muslims greatly expand from their territory,
+	
+	Eastern
+		Budhism
+			Completely rework religion, make it actually interactive and give it a reason to not switch to another religion
+			Possibly capable of reforming
+		Indochina
+			explore options for flavour in this region, especially with the emperor
+			explore thai flavour
+		China
+			rework celestial empire to hopefully find a middle ground between unstoppable juggernaught only stopped by a rediculous disaster that ai will never trigger, and useless gamble that eventually falls back into warring states without there ever being a real victor.
+			Possibly implement conflict between Taoism, Buddhism, and Confucianism 
+		Manchu
+			possibly add railroading as needed in order for Manchu to occassionally succeed in invading China
+		
+			
