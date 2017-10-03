@@ -31,7 +31,7 @@ Mod ideas
 			after 1.23 look into zorastrian unified persia and events that would accompany it 
 		Moghuls
 			Railroading
-			Flavor regarding Sikh rebels and religious instability.
+			Flavor regarding Sikh rebels and religious instability. (Center of Reformation?)
 		North Indian Sultans
 			Disasters reflecting their incompetence
 		West Africa
@@ -41,6 +41,7 @@ Mod ideas
 			explore flavour regarding clashes between islam and copts
 			explore flavour for mozambique, zimbabwe, and others in horn of africa region, 
 			look into madegascar flavour, (if any exists)
+			(Ethiopia damming the Nile, crippling the Mamluks)
 		North Africa	
 			reforming Al-Andulas restores the Umayyads
 			flavor between berber tribes, iberians, and italians
